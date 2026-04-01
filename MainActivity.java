@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             Show();
         });
         binding.check.setOnCheckedChangeListener((buttonView, isChecked) -> {
-            getImage().isAI = isChecked;
+            getImage().setAI(isChecked);
             binding.check.setChecked(getImage().isAI());
         });
         binding.desc.addTextChangedListener(new TextWatcher() {

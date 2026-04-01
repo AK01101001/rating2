@@ -3,10 +3,10 @@ package dev.isnow.obrazy;
 import java.util.ArrayList;
 
 public class Obraz {
-    int source;
-    boolean isAI;
-    ArrayList<Float> ratings;
-    String desc;
+    private int source;
+    private boolean isAI;
+    private ArrayList<Float> ratings;
+    private String desc;
 
     public Obraz(int source, String desc) {
         this.source = source;
@@ -22,11 +22,6 @@ public class Obraz {
     public void setDesc(String desc) {
         this.desc = desc;
     }
-
-    public ArrayList<Float> getRatings() {
-        return ratings;
-    }
-
     public void AddRating(float rate) {
         this.ratings.add(rate);
     }
