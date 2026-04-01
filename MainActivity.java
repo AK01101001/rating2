@@ -92,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
             public void onRatingChanged(RatingBar ratingBar, float rating, boolean fromUser) {
                 if (!inChanging)
                 {
-                    getImage().AddRating((int)rating);
+                    getImage().AddRating(rating);
                     binding.srednia.setText(getImage().getAverge());
                 }
 

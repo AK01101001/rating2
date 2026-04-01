@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class Obraz {
     int source;
     boolean isAI;
-    ArrayList<Integer> ratings;
+    ArrayList<Float> ratings;
     String desc;
 
     public Obraz(int source, String desc) {
@@ -23,11 +23,11 @@ public class Obraz {
         this.desc = desc;
     }
 
-    public ArrayList<Integer> getRatings() {
+    public ArrayList<Float> getRatings() {
         return ratings;
     }
 
-    public void AddRating(int rate) {
+    public void AddRating(float rate) {
         this.ratings.add(rate);
     }
     public String getAverge()
@@ -36,8 +36,8 @@ public class Obraz {
         {
             return "brak ocen";
         }
-        int suma =0;
-        for (int rating :
+        float suma =0;
+        for (float rating :
                 ratings) {
             suma += rating;
         }
